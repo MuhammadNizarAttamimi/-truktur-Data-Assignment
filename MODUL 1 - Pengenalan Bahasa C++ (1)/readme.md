@@ -7,7 +7,7 @@ Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri ser
 
 ## Guided 
 
-### 1. [Nama Topik]
+### 1. [Code Blocks Ide dan Pengenalan Bahasa C++]
 
 ```C++
 #include <iostream>
@@ -59,7 +59,7 @@ int main() {
 #### Output:
 <img width="1228" height="138" alt="Image" src="https://github.com/user-attachments/assets/b616e8ee-cb44-41e3-9272-cd40c3e947d2" />
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Kode di atas digunakan untuk operasi aritmatika dua bilangan bertipe float. Jadi Pengguna  memasukkan dua angka , lalu menampilkan hasil penjumlahan, pengurangan, perkalian, dan pembagian dari kedua angka tersebut..
 
 #### Full code Screenshot:
 <img width="1598" height="698" alt="Image" src="https://github.com/user-attachments/assets/b188a1eb-a70d-48ea-a85e-efacf950444e" />
