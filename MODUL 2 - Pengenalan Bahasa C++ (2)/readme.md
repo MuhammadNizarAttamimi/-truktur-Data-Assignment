@@ -89,7 +89,7 @@ int main() {
 
 ```
 #### Output:
-<img width="1228" height="138" alt="Image" src="https://github.com/user-attachments/assets/b616e8ee-cb44-41e3-9272-cd40c3e947d2" />
+<img width="1602" height="669" alt="Image" src="https://github.com/user-attachments/assets/85c96198-a071-4296-8ba1-d02f2c1f798b" />
 
 Kode di atas digunakan untuk operasi aritmatika dua bilangan bertipe float. Jadi Pengguna  memasukkan dua angka , lalu menampilkan hasil penjumlahan, pengurangan, perkalian, dan pembagian dari kedua angka tersebut..
 
@@ -204,3 +204,4 @@ Program di atas menunjukkan penerapan dasar dari bahasa pemrograman C++ yang men
 [1] GeeksforGeeks. (2025). Basic Input and Output in C++. Retrieved October 9, 2025, from https://www.geeksforgeeks.org/basic-input-output-cpp/
 [2] GeeksforGeeks. (2025). C++ Program to Convert Number to Words. Retrieved October 9, 2025, from https://www.geeksforgeeks.org/cpp-program-to-convert-number-to-words/
 [3] W3Schools. (2025). C++ For Loop. Retrieved October 9, 2025, from https://www.w3schools.com/cpp/cpp_for_loop.asp
+
