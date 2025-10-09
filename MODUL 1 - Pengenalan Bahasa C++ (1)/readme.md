@@ -55,6 +55,71 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 #### Full code Screenshot:
 <img width="1598" height="698" alt="Image" src="https://github.com/user-attachments/assets/b188a1eb-a70d-48ea-a85e-efacf950444e" />
 
+### 2. [Soal]
+
+```C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    float a, b;
+
+    cout << "Masukkan dua bilangan float: ";
+    cin >> a >> b;
+
+    cout << "Hasil penjumlahan: " << a + b << endl;
+    cout << "Hasil pengurangan: " << a - b << endl;
+    cout << "Hasil perkalian: " << a * b << endl;
+
+    if (b != 0)
+        cout << "Hasil pembagian: " << a / b << endl;
+    else
+        cout << "Tidak bisa membagi dengan nol!" << endl;
+
+    return 0;
+}
+
+```
+#### Output:
+<img width="1228" height="138" alt="Image" src="https://github.com/user-attachments/assets/b616e8ee-cb44-41e3-9272-cd40c3e947d2" />
+
+Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+
+#### Full code Screenshot:
+<img width="1598" height="698" alt="Image" src="https://github.com/user-attachments/assets/b188a1eb-a70d-48ea-a85e-efacf950444e" />
+
+### 3. [Soal]
+
+```C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    float a, b;
+
+    cout << "Masukkan dua bilangan float: ";
+    cin >> a >> b;
+
+    cout << "Hasil penjumlahan: " << a + b << endl;
+    cout << "Hasil pengurangan: " << a - b << endl;
+    cout << "Hasil perkalian: " << a * b << endl;
+
+    if (b != 0)
+        cout << "Hasil pembagian: " << a / b << endl;
+    else
+        cout << "Tidak bisa membagi dengan nol!" << endl;
+
+    return 0;
+}
+
+```
+#### Output:
+<img width="1228" height="138" alt="Image" src="https://github.com/user-attachments/assets/b616e8ee-cb44-41e3-9272-cd40c3e947d2" />
+
+Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+
+#### Full code Screenshot:
+<img width="1598" height="698" alt="Image" src="https://github.com/user-attachments/assets/b188a1eb-a70d-48ea-a85e-efacf950444e" />
 
 ## Kesimpulan
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
