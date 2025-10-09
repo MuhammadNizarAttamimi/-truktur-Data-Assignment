@@ -62,19 +62,31 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 using namespace std;
 
 int main() {
-    float a, b;
+    int n;
+    cout << "Masukkan angka (0-100): ";
+    cin >> n;
 
-    cout << "Masukkan dua bilangan float: ";
-    cin >> a >> b;
+    string satuan[] = {"nol", "satu", "dua", "tiga", "empat", "lima", "enam",
+                       "tujuh", "delapan", "sembilan", "sepuluh", "sebelas"};
 
-    cout << "Hasil penjumlahan: " << a + b << endl;
-    cout << "Hasil pengurangan: " << a - b << endl;
-    cout << "Hasil perkalian: " << a * b << endl;
+    string hasil;
 
-    if (b != 0)
-        cout << "Hasil pembagian: " << a / b << endl;
-    else
-        cout << "Tidak bisa membagi dengan nol!" << endl;
+    if (n < 0 || n > 100) {
+        hasil = "Angka di luar jangkauan";
+    } else if (n < 12) {
+        hasil = satuan[n];
+    } else if (n < 20) {
+        hasil = satuan[n - 10] + " belas";
+    } else if (n < 100) {
+        int puluh = n / 10;
+        int sisa = n % 10;
+        hasil = satuan[puluh] + " puluh";
+        if (sisa != 0) hasil += " " + satuan[sisa];
+    } else if (n == 100) {
+        hasil = "seratus";
+    }
+
+    cout << n << " : " << hasil << endl;
 
     return 0;
 }
@@ -86,7 +98,7 @@ int main() {
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1598" height="698" alt="Image" src="https://github.com/user-attachments/assets/b188a1eb-a70d-48ea-a85e-efacf950444e" />
+<img width="1600" height="812" alt="Image" src="https://github.com/user-attachments/assets/f1d51f02-f3b5-4da8-80a1-3d3c851f90ea" />
 
 ### 3. [Soal]
 
