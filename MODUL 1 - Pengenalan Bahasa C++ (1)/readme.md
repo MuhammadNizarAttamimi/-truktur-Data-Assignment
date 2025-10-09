@@ -143,7 +143,7 @@ int main() {
 #### Output:
 <img width="1603" height="226" alt="Image" src="https://github.com/user-attachments/assets/e534e1aa-d89a-425b-ae55-cd4f5bbd12df" />
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Kode di atas digunakan untuk mencetak sebuah pola angka secara menurun dengan bentuk simetris yang di mana di tengah setiap baris terdapat tanda bintang (*) sebagai pemisah antara deretan angka menurun dan menaik.
 
 #### Full code Screenshot:
 <img width="1598" height="665" alt="Image" src="https://github.com/user-attachments/assets/c1fe6454-eeec-41d5-b624-7f06bb70688b" />
