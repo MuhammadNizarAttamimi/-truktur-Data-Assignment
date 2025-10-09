@@ -7,25 +7,49 @@ penjelasan terkait materi modul ini yaitu memberikan pemahaman dasar tentang car
 
 ## Guided 
 
-### 1. [Code Blocks Ide dan Pengenalan Bahasa C++]
+### 1. [Pengenalan Bahasa C++ (Bagian Kedua)]
 
 ```C++
 #include <iostream>
 using namespace std;
 
-void tulis (int x){
-    for (int i = 0; 1 < x; i++ ){
-        cout << "Baris ke -: " << i+1 << endl;
+int main() {
+    // --- Array 1 Dimensi ---
+    int arr[5] = {10, 20, 30, 40, 50};
+    cout << "Array 1 Dimensi:" << endl;
+    for (int i = 0; i < 5; i++) {
+        cout << "Element ke-" << i << ": " << arr[i] << endl;
     }
-}
+    cout << endl;
 
-int main () {
-    int jum;
-    cout << "Jumlah baris kata: ";
-    cin >> jum;
-    tulis(jum);
-    
-    return 0;
+    // --- Array 2 Dimensi ---
+    int arr2D[2][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+    };
+    cout << "Array 2 Dimensi:" << endl;
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << "arr2D[" << i << "][" << j << "]: " << arr2D[i][j]
+            << " ";
+        }
+        cout << endl;
+    }
+    // --- Array Multi Dimensi (3D) ---
+    int arr3D[2][2][3] = {
+        { {1, 2, 3}, {4, 5, 6} },
+        { {7, 8, 9}, {10, 11, 12} },
+    };
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            for (int k = 0; k < 3; k++) {
+                cout << "arr3D[" << i << "][" << j << "]["
+                << k << "]: " << arr3D[i][j][k] << endl;
+            }
+        }
+    }
+
+    return 0;
 }
 ```
 Program ini berfungsi untuk menampilkan tulisan berulang sebanyak jumlah yang dimasukkan oleh pengguna.
@@ -204,6 +228,7 @@ Program di atas menunjukkan penerapan dasar dari bahasa pemrograman C++ yang men
 [1] GeeksforGeeks. (2025). Basic Input and Output in C++. Retrieved October 9, 2025, from https://www.geeksforgeeks.org/basic-input-output-cpp/
 [2] GeeksforGeeks. (2025). C++ Program to Convert Number to Words. Retrieved October 9, 2025, from https://www.geeksforgeeks.org/cpp-program-to-convert-number-to-words/
 [3] W3Schools. (2025). C++ For Loop. Retrieved October 9, 2025, from https://www.w3schools.com/cpp/cpp_for_loop.asp
+
 
 
 
