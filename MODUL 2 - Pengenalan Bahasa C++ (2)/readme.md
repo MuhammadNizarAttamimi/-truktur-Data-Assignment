@@ -117,7 +117,7 @@ int main(){
 Kode di atas digunakan untuk mengubah angka dari 0 sampai 100 menjadi bentuk tulisan dalam bahasa Indonesia.
 
 #### Full code Screenshot:
-<img width="1600" height="812" alt="Image" src="https://github.com/user-attachments/assets/f1d51f02-f3b5-4da8-80a1-3d3c851f90ea" />
+<img width="1595" height="340" alt="Image" src="https://github.com/user-attachments/assets/35e2bd68-ae1c-432e-9b72-a3ab75c12fb9" />
 
 ### 3. [Soal]
 
@@ -204,6 +204,7 @@ Program di atas menunjukkan penerapan dasar dari bahasa pemrograman C++ yang men
 [1] GeeksforGeeks. (2025). Basic Input and Output in C++. Retrieved October 9, 2025, from https://www.geeksforgeeks.org/basic-input-output-cpp/
 [2] GeeksforGeeks. (2025). C++ Program to Convert Number to Words. Retrieved October 9, 2025, from https://www.geeksforgeeks.org/cpp-program-to-convert-number-to-words/
 [3] W3Schools. (2025). C++ For Loop. Retrieved October 9, 2025, from https://www.w3schools.com/cpp/cpp_for_loop.asp
+
 
 
 
