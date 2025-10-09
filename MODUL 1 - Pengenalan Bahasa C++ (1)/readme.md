@@ -149,7 +149,7 @@ Kode di atas digunakan untuk mencetak sebuah pola angka secara menurun dengan be
 <img width="1598" height="665" alt="Image" src="https://github.com/user-attachments/assets/c1fe6454-eeec-41d5-b624-7f06bb70688b" />
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Program di atas menunjukkan penerapan dasar dari bahasa pemrograman C++ yang mencakup penggunaan struktur program dasar (input, proses, output), operator aritmetika, percabangan (if–else), dan perulangan (looping). 
 
 ## Referensi
 [1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
