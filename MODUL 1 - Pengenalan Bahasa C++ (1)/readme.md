@@ -3,7 +3,7 @@
 
 ## Dasar Teori
 
-Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri serta susunan yang terstruktur per topiknya.
+penjelasan terkait materi modul ini yaitu memberikan pemahaman dasar tentang cara menulis, menjalankan, dan memahami program sederhana menggunakan C++. mulai dari mengenal tampilan IDE, menulis kode sederhana, menggunakan variabel, hingga membuat logika dasar dengan percabangan dan perulangan.
 
 ## Guided 
 
