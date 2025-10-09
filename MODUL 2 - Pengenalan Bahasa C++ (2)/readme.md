@@ -2,8 +2,7 @@
 <p align="center">Muhammad Nizar Attamimi</p>
 
 ## Dasar Teori
-
-penjelasan terkait materi modul ini yaitu memberikan pemahaman dasar tentang cara menulis, menjalankan, dan memahami program sederhana menggunakan C++. mulai dari mengenal tampilan IDE, menulis kode sederhana, menggunakan variabel, hingga membuat logika dasar dengan percabangan dan perulangan.
+“Pengenalan Bahasa C++ (Bagian Kedua)” membahas lanjutan dasar-dasar pemrograman C++ dengan fokus pada pemahaman tipe data, operator, percabangan, dan perulangan. Pada bagian awal, dijelaskan berbagai tipe data seperti int, float, double, char, bool, dan string, serta cara melakukan konversi antar tipe data.
 
 ## Guided 
 
@@ -228,6 +227,7 @@ Program di atas menunjukkan penerapan dasar dari bahasa pemrograman C++ yang men
 [1] GeeksforGeeks. (2025). Basic Input and Output in C++. Retrieved October 9, 2025, from https://www.geeksforgeeks.org/basic-input-output-cpp/
 [2] GeeksforGeeks. (2025). C++ Program to Convert Number to Words. Retrieved October 9, 2025, from https://www.geeksforgeeks.org/cpp-program-to-convert-number-to-words/
 [3] W3Schools. (2025). C++ For Loop. Retrieved October 9, 2025, from https://www.w3schools.com/cpp/cpp_for_loop.asp
+
 
 
 
