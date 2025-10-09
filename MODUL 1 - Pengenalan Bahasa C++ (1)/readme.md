@@ -13,13 +13,22 @@ Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri ser
 #include <iostream>
 using namespace std;
 
-int main() {
-    cout << "ini adalah file code guided praktikan" << endl;
+void tulis (int x){
+    for (int i = 0; 1 < x; i++ ){
+        cout << "Baris ke -: " << i+1 << endl;
+    }
+}
+
+int main () {
+    int jum;
+    cout << "Jumlah baris kata: ";
+    cin >> jum;
+    tulis(jum);
+    
     return 0;
 }
 ```
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
-
+Program ini berfungsi untuk menampilkan tulisan berulang sebanyak jumlah yang dimasukkan oleh pengguna.
 ## Unguided 
 
 ### 1. [Soal]
