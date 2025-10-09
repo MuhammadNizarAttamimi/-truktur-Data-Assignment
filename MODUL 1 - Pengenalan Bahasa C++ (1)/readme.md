@@ -152,4 +152,6 @@ Kode di atas digunakan untuk mencetak sebuah pola angka secara menurun dengan be
 Program di atas menunjukkan penerapan dasar dari bahasa pemrograman C++ yang mencakup penggunaan struktur program dasar (input, proses, output), operator aritmetika, percabangan (if–else), dan perulangan (looping). 
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] GeeksforGeeks. (2025). Basic Input and Output in C++. Retrieved October 9, 2025, from https://www.geeksforgeeks.org/basic-input-output-cpp/
+[2] GeeksforGeeks. (2025). C++ Program to Convert Number to Words. Retrieved October 9, 2025, from https://www.geeksforgeeks.org/cpp-program-to-convert-number-to-words/
+[3] W3Schools. (2025). C++ For Loop. Retrieved October 9, 2025, from https://www.w3schools.com/cpp/cpp_for_loop.asp
