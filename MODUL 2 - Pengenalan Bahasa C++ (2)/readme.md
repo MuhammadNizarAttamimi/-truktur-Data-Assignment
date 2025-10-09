@@ -13,7 +13,6 @@
 using namespace std;
 
 int main() {
-    // --- Array 1 Dimensi ---
     int arr[5] = {10, 20, 30, 40, 50};
     cout << "Array 1 Dimensi:" << endl;
     for (int i = 0; i < 5; i++) {
@@ -21,7 +20,6 @@ int main() {
     }
     cout << endl;
 
-    // --- Array 2 Dimensi ---
     int arr2D[2][3] = {
         {1, 2, 3},
         {4, 5, 6},
@@ -34,7 +32,6 @@ int main() {
         }
         cout << endl;
     }
-    // --- Array Multi Dimensi (3D) ---
     int arr3D[2][2][3] = {
         { {1, 2, 3}, {4, 5, 6} },
         { {7, 8, 9}, {10, 11, 12} },
@@ -229,6 +226,7 @@ Ketiga program di atas merupakan contoh penerapan dasar pemrograman dalam bahasa
 [2] Deitel, P. J., & Deitel, H. M. (2017). C++ How to Program (10th ed.). Pearson Education.
 
 [3] Schildt, H. (2017). C++: The Complete Reference (4th ed.). McGraw-Hill Education.
+
 
 
 
