@@ -51,7 +51,7 @@ int main() {
     return 0;
 }
 ```
-Program ini berfungsi untuk menampilkan tulisan berulang sebanyak jumlah yang dimasukkan oleh pengguna.
+Program ini bertujuan untuk memperkenalkan konsep array,digunakan untuk menyimpan sekumpulan data dengan tipe yang sama dalam satu variabel.
 ## Unguided 
 
 ### 1. [Soal]
@@ -114,7 +114,7 @@ int main() {
 #### Output:
 <img width="1602" height="669" alt="Image" src="https://github.com/user-attachments/assets/85c96198-a071-4296-8ba1-d02f2c1f798b" />
 
-Kode di atas digunakan untuk operasi aritmatika dua bilangan bertipe float. Jadi Pengguna  memasukkan dua angka , lalu menampilkan hasil penjumlahan, pengurangan, perkalian, dan pembagian dari kedua angka tersebut..
+code ini digunakan untuk melakukan operasi pada dua buah matriks berukuran 3×3, yaitu:Penjumlahan matriks,Pengurangan matriks,Perkalian matriks, Program ini juga mengajarkan cara menggunakan array dua dimensi (2D array) serta loop bersarang (nested loop) untuk mengakses elemen-elemen dalam matriks.
 
 #### Full code Screenshot:
 <img width="1652" height="984" alt="Image" src="https://github.com/user-attachments/assets/8ddd2308-44e6-4ced-995b-083dbb5f05b9" />
@@ -137,7 +137,7 @@ int main(){
 #### Output:
 <img width="1604" height="143" alt="Image" src="https://github.com/user-attachments/assets/7117239c-d76d-40f8-907e-21b324683c23" />
 
-Kode di atas digunakan untuk mengubah angka dari 0 sampai 100 menjadi bentuk tulisan dalam bahasa Indonesia.
+code ini digunakan untuk menukar posisi (menggeser) tiga buah bilangan yang dimasukkan oleh pengguna. program melakukan pertukaran nilai secara melingkar antara variabel a, b, dan c menggunakan variabel sementara t.
 
 #### Full code Screenshot:
 <img width="1595" height="340" alt="Image" src="https://github.com/user-attachments/assets/35e2bd68-ae1c-432e-9b72-a3ab75c12fb9" />
@@ -215,18 +215,20 @@ void hitungRata(int a[], int n){
 #### Output:
 <img width="1652" height="755" alt="Image" src="https://github.com/user-attachments/assets/c790110a-95c5-4be0-b1fd-c13d4a8caa74" />
 
-Kode di atas digunakan untuk mencetak sebuah pola angka secara menurun dengan bentuk simetris yang di mana di tengah setiap baris terdapat tanda bintang (*) sebagai pemisah antara deretan angka menurun dan menaik.
+Program ini digunakan untuk mengolah data array dengan berbagai fungsi, seperti: Menampilkan isi array,Mencari nilai maksimum,Mencari nilai minimum,Menghitung rata-rata nilai.
 
 #### Full code Screenshot:
 <img width="1700" height="999" alt="Image" src="https://github.com/user-attachments/assets/a99439a4-3dd3-4ebd-9d38-a039b3bd59e6" />
 
 ## Kesimpulan
-Program di atas menunjukkan penerapan dasar dari bahasa pemrograman C++ yang mencakup penggunaan struktur program dasar (input, proses, output), operator aritmetika, percabangan (if–else), dan perulangan (looping). 
+Ketiga program di atas merupakan contoh penerapan dasar pemrograman dalam bahasa C++, pada pengolahan data menggunakan variabel, array, dan matriks. Secara keseluruhan, ketiga program ini menggambarkan perkembangan logika pemrograman dari sederhana ke kompleks yang dimulai dari manipulasi variabel, pengolahan data linear dengan array, hingga pengolahan data dua dimensi dalam bentuk matriks — yang semuanya menjadi dasar penting dalam memahami konsep algoritma dan struktur data di C++. 
 
 ## Referensi
-[1] GeeksforGeeks. (2025). Basic Input and Output in C++. Retrieved October 9, 2025, from https://www.geeksforgeeks.org/basic-input-output-cpp/
-[2] GeeksforGeeks. (2025). C++ Program to Convert Number to Words. Retrieved October 9, 2025, from https://www.geeksforgeeks.org/cpp-program-to-convert-number-to-words/
-[3] W3Schools. (2025). C++ For Loop. Retrieved October 9, 2025, from https://www.w3schools.com/cpp/cpp_for_loop.asp
+[1] C++ documentation. (2024). cppreference.com: C++ Standard Library reference. Retrieved from https://en.cppreference.com/w/
+
+[2] Deitel, P. J., & Deitel, H. M. (2017). C++ How to Program (10th ed.). Pearson Education.
+
+[3] Schildt, H. (2017). C++: The Complete Reference (4th ed.). McGraw-Hill Education.
 
 
 
