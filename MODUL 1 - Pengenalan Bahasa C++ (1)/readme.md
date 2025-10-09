@@ -103,7 +103,7 @@ int main() {
 #### Output:
 <img width="1444" height="141" alt="Image" src="https://github.com/user-attachments/assets/28e65e77-bf81-4b26-8aad-bb2fee0732cb" />
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Kode di atas digunakan untuk mengubah angka dari 0 sampai 100 menjadi bentuk tulisan dalam bahasa Indonesia.
 
 #### Full code Screenshot:
 <img width="1600" height="812" alt="Image" src="https://github.com/user-attachments/assets/f1d51f02-f3b5-4da8-80a1-3d3c851f90ea" />
