@@ -195,7 +195,7 @@ void hitungRata(int a[], int n){
 Kode di atas digunakan untuk mencetak sebuah pola angka secara menurun dengan bentuk simetris yang di mana di tengah setiap baris terdapat tanda bintang (*) sebagai pemisah antara deretan angka menurun dan menaik.
 
 #### Full code Screenshot:
-<img width="1598" height="665" alt="Image" src="https://github.com/user-attachments/assets/c1fe6454-eeec-41d5-b624-7f06bb70688b" />
+<img width="1700" height="999" alt="Image" src="https://github.com/user-attachments/assets/a99439a4-3dd3-4ebd-9d38-a039b3bd59e6" />
 
 ## Kesimpulan
 Program di atas menunjukkan penerapan dasar dari bahasa pemrograman C++ yang mencakup penggunaan struktur program dasar (input, proses, output), operator aritmetika, percabangan (if–else), dan perulangan (looping). 
@@ -204,6 +204,7 @@ Program di atas menunjukkan penerapan dasar dari bahasa pemrograman C++ yang men
 [1] GeeksforGeeks. (2025). Basic Input and Output in C++. Retrieved October 9, 2025, from https://www.geeksforgeeks.org/basic-input-output-cpp/
 [2] GeeksforGeeks. (2025). C++ Program to Convert Number to Words. Retrieved October 9, 2025, from https://www.geeksforgeeks.org/cpp-program-to-convert-number-to-words/
 [3] W3Schools. (2025). C++ For Loop. Retrieved October 9, 2025, from https://www.w3schools.com/cpp/cpp_for_loop.asp
+
 
 
 
