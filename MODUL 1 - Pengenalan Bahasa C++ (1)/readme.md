@@ -90,7 +90,6 @@ int main() {
 
     return 0;
 }
-
 ```
 #### Output:
 <img width="1444" height="141" alt="Image" src="https://github.com/user-attachments/assets/28e65e77-bf81-4b26-8aad-bb2fee0732cb" />
@@ -107,23 +106,30 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 using namespace std;
 
 int main() {
-    float a, b;
+    int n;
+    cout << "Input: ";
+    cin >> n;
+    cout << "Output:\n";
 
-    cout << "Masukkan dua bilangan float: ";
-    cin >> a >> b;
+    for (int i = n; i >= 1; i--) {
+    
+        for (int s = 0; s < (n - i) * 2; s++)
+            cout << " ";
 
-    cout << "Hasil penjumlahan: " << a + b << endl;
-    cout << "Hasil pengurangan: " << a - b << endl;
-    cout << "Hasil perkalian: " << a * b << endl;
 
-    if (b != 0)
-        cout << "Hasil pembagian: " << a / b << endl;
-    else
-        cout << "Tidak bisa membagi dengan nol!" << endl;
+        for (int j = i; j >= 1; j--)
+            cout << j << " ";
+
+        cout << "* ";
+
+        for (int j = 1; j <= i; j++)
+            cout << j << " ";
+
+        cout << endl;
+    }
 
     return 0;
 }
-
 ```
 #### Output:
 <img width="1228" height="138" alt="Image" src="https://github.com/user-attachments/assets/b616e8ee-cb44-41e3-9272-cd40c3e947d2" />
