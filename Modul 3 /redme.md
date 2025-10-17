@@ -137,9 +137,8 @@ code ini digunakan untuk.
 
 
 ### 2. [Soal]
-
-```C++
 **(Pelajaran.h)**
+```C++
 #ifndef MATAKULIAH_H
 #define MATAKULIAH_H
 
@@ -158,7 +157,7 @@ void tampilkanMataKuliah(MataKuliah mk);
 #endif
 ```
 
-**Pelajaran.cpp**
+**(Pelajaran.cpp)**
 ```C++
 #include <iostream>
 #include "Pelajaran.h" 
@@ -177,7 +176,7 @@ void tampilkanMataKuliah(MataKuliah mk) {
 }
 ```
 
-**Main.cpp**
+**(Main.cpp)**
 ```C++
 #include <iostream>
 #include "Pelajaran.h"  
