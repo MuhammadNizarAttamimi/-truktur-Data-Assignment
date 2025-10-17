@@ -1,54 +1,75 @@
-# <h1 align="center">Laporan Praktikum Modul Pengenalan Bahasa C++ (1)</h1>
+# <h1 align="center">Laporan Praktikum Modul Abstract Data Type (ADT)</h1>
 <p align="center">Muhammad Nizar Attamimi</p>
 
 ## Dasar Teori
-“Pengenalan Bahasa C++ (Bagian Kedua)” membahas lanjutan dasar-dasar pemrograman C++ dengan fokus pada pemahaman tipe data, operator, percabangan, dan perulangan. Pada bagian awal, dijelaskan berbagai tipe data seperti int, float, double, char, bool, dan string, serta cara melakukan konversi antar tipe data.
+ADT adalah TYPE dan sekumpulan PRIMITIF (operasi dasar) terhadap TYPE tersebut. Selain itu, dalam
+sebuah ADT yang lengkap, disertakan pula definisi invarian dari TYPE dan aksioma yang berlaku. ADT
+merupakan definisi STATIK.
 
 ## Guided 
 
-### 1. [Pengenalan Bahasa C++ (Bagian Kedua)]
+### 1. [Abstract Data Type (ADT)]
 
 ```C++
 #include <iostream>
 using namespace std;
 
-int main() {
-    int arr[5] = {10, 20, 30, 40, 50};
-    cout << "Array 1 Dimensi:" << endl;
-    for (int i = 0; i < 5; i++) {
-        cout << "Element ke-" << i << ": " << arr[i] << endl;
-    }
-    cout << endl;
+struct mahasiswa{ 
+char nim[10]; 
+int nilai1,nilai2;
+};
+void inputMhs(mahasiswa &m); 
+float rata2(mahasiswa m);
 
-    int arr2D[2][3] = {
-        {1, 2, 3},
-        {4, 5, 6},
-    };
-    cout << "Array 2 Dimensi:" << endl;
-    for (int i = 0; i < 2; i++) {
-        for (int j = 0; j < 3; j++) {
-            cout << "arr2D[" << i << "][" << j << "]: " << arr2D[i][j]
-            << " ";
-        }
-        cout << endl;
-    }
-    int arr3D[2][2][3] = {
-        { {1, 2, 3}, {4, 5, 6} },
-        { {7, 8, 9}, {10, 11, 12} },
-    };
-    for (int i = 0; i < 2; i++) {
-        for (int j = 0; j < 2; j++) {
-            for (int k = 0; k < 3; k++) {
-                cout << "arr3D[" << i << "][" << j << "]["
-                << k << "]: " << arr3D[i][j][k] << endl;
-            }
-        }
-    }
+int main() 
+{ 
+mahasiswa mhs; 
+inputMhs(mhs); 
+cout << “rata-rata = “ << rata2(mhs); 
+return 0; 
+}
 
-    return 0;
+
+void inputMhs(mahasiswa &m){ 
+cout << “input nama = “; 
+cin >> m.nim; 
+cout << “input nilai = “; 
+cin >> m.nilai1; 
+cout << “input nilai2 = “;
+cin >> m.nilai2; 
+} 
+float rata2(mahasiswa m){ 
+return float(m.nilai1+m.nilai2)/2; 
+}
+
+mahasiswa.h
+#ifndef MAHASISWA_H_INCLUDED 
+#define MAHASISWA_H_INCLUDED 
+struct mahasiswa{ 
+char nim[10]; 
+int nilai1, nilai2; 
+};
+void inputMhs(mahasiswa &m); 
+float rata2(mahasiswa m); 
+#endif // MAHASISWA_H_INCLUDED
+
+mahasiswa.cpp
+#include “mahasiswa.h” 
+void inputMhs(mahasiswa &m){ 
+cout << “input nama = “; 
+cin >> (m).nim; 
+cout << “input nilai = “; 
+cin >> (m).nilai1; 
+cout << “input nilai2 = “; 
+cin >> (m).nilai2;
+} 
+ 
+float rata2(mahasiswa m){ 
+  return float(m.nilai1+m.nilai2)/2; 
+}
 }
 ```
-Program ini bertujuan untuk memperkenalkan konsep array,digunakan untuk menyimpan sekumpulan data dengan tipe yang sama dalam satu variabel.
+Program ini bertujuan untuk.
 ## Unguided 
 
 ### 1. [Soal]
@@ -57,55 +78,53 @@ Program ini bertujuan untuk memperkenalkan konsep array,digunakan untuk menyimpa
 #include <iostream>
 using namespace std;
 
+struct Mahasiswa {
+    string nama;
+    string nim;
+    float nilaiUTS;
+    float nilaiUAS;
+    float nilaiTugas;
+    float totalNilai;
+};
+
+float hitungTotalNilai(float uts, float uas, float tugas) {
+    return (0.3 * uts) + (0.4 * uas) + (0.3 * tugas);
+}
+
 int main() {
-    int A[3][3], B[3][3], C[3][3];
+    Mahasiswa data[10];
+    int jumlah;
 
-    cout << "Input matriks A:" << endl;
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            cin >> A[i][j];
-        }
+    cout << "Masukkan banyaknya mahasiswa (maksimal 10): ";
+    cin >> jumlah;
+
+    for (int i = 0; i < jumlah; i++) {
+        cout << "\nMahasiswa ke-" << i + 1 << endl;
+        cin.ignore();
+        cout << "Nama Mahasiswa : ";
+        getline(cin, data[i].nama);
+        cout << "NIM            : ";
+        cin >> data[i].nim;
+        cout << "Nilai UTS      : ";
+        cin >> data[i].nilaiUTS;
+        cout << "Nilai UAS      : ";
+        cin >> data[i].nilaiUAS;
+        cout << "Nilai Tugas    : ";
+        cin >> data[i].nilaiTugas;
+
+        data[i].totalNilai = hitungTotalNilai(data[i].nilaiUTS, data[i].nilaiUAS, data[i].nilaiTugas);
     }
 
-    cout << "Input matriks B:" << endl;
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            cin >> B[i][j];
-        }
-    }
-
-    cout << "Hasil penjumlahan matriks:" << endl;
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            C[i][j] = A[i][j] + B[i][j];
-            cout << C[i][j] << " ";
-        }
-        cout << endl;
-    }
-
-    cout << "Hasil pengurangan matriks:" << endl;
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            C[i][j] = A[i][j] - B[i][j];
-            cout << C[i][j] << " ";
-        }
-        cout << endl;
-    }
-
-    cout << "Hasil perkalian matriks:" << endl;
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            C[i][j] = 0;
-            for (int k = 0; k < 3; k++) {
-                C[i][j] += A[i][k] * B[k][j];
-            }
-            cout << C[i][j] << " ";
-        }
-        cout << endl;
+    cout << "\n=== Rekapitulasi Nilai Mahasiswa ===" << endl;
+    for (int i = 0; i < jumlah; i++) {
+        cout << "\nNama         : " << data[i].nama;
+        cout << "\nNIM          : " << data[i].nim;
+        cout << "\nNilai Akhir  : " << data[i].totalNilai << endl;
     }
 
     return 0;
 }
+
 
 ```
 #### Output:
