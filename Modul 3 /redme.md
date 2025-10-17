@@ -69,7 +69,7 @@ float rata2(mahasiswa m){
 }
 }
 ```
-Program ini bertujuan untuk.
+Program ini bertujuan untuk memasukkan data mahasiswa dan menghitung rata-rata dua nilai yang diinput.
 ## Unguided 
 
 ### 1. [Soal]
