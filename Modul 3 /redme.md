@@ -139,25 +139,68 @@ code ini digunakan untuk.
 ### 2. [Soal]
 
 ```C++
-#include <iostream>
+**(Pelajaran.h)**
+#ifndef MATAKULIAH_H
+#define MATAKULIAH_H
+
+#include <string>
 using namespace std;
 
-int main(){
-    int a, b, c, t;
-    cout << "Masukkan tiga bilangan: ";
-    cin >> a >> b >> c;
-    cout<<"Sebelum: "<<a<<" "<<b<<" "<<c<<endl;
-    t=a; a=b; b=c; c=t;
-    cout<<"Sesudah: "<<a<<" "<<b<<" "<<c<<endl;
+struct MataKuliah {
+    string nama;
+    string kode;
+};
+
+MataKuliah buatMataKuliah(string namaMatkul, string kodeMatkul);
+
+void tampilkanMataKuliah(MataKuliah mk);
+
+#endif
+
+**(Pelajaran.cpp)**
+#include <iostream>
+#include "Pelajaran.h" 
+using namespace std;
+
+MataKuliah buatMataKuliah(string namaMatkul, string kodeMatkul) {
+    MataKuliah mk;
+    mk.nama = namaMatkul;
+    mk.kode = kodeMatkul;
+    return mk;
 }
+
+void tampilkanMataKuliah(MataKuliah mk) {
+    cout << "Nama Mata Kuliah : " << mk.nama << endl;
+    cout << "Kode Mata Kuliah : " << mk.kode << endl;
+}
+
+**(Main.cpp)**
+#include <iostream>
+#include "Pelajaran.h"  
+using namespace std;
+
+int main() {
+    string namaMatkul = "Praktikum Struktur Data";
+    string kodeMatkul = "STD";
+
+    MataKuliah mk = buatMataKuliah(namaMatkul, kodeMatkul);
+
+    cout << "\n=== Informasi Mata Kuliah ===\n";
+    tampilkanMataKuliah(mk);
+
+    return 0;
+}
+
 ```
 #### Output:
-<img width="1604" height="143" alt="Image" src="https://github.com/user-attachments/assets/7117239c-d76d-40f8-907e-21b324683c23" />
+<img width="1604" height="172" alt="image" src="https://github.com/user-attachments/assets/18d76be1-aab3-4176-97f6-14b71bc31da2" />
 
-code ini digunakan untuk menukar posisi (menggeser) tiga buah bilangan yang dimasukkan oleh pengguna. program melakukan pertukaran nilai secara melingkar antara variabel a, b, dan c menggunakan variabel sementara t.
+code ini digunakan untuk.
 
 #### Full code Screenshot:
-<img width="1595" height="340" alt="Image" src="https://github.com/user-attachments/assets/35e2bd68-ae1c-432e-9b72-a3ab75c12fb9" />
+<img width="1600" height="421" alt="image" src="https://github.com/user-attachments/assets/4cbf13bb-579c-4d9f-a0ec-83c2525bab14" />
+<img width="1603" height="401" alt="image" src="https://github.com/user-attachments/assets/59ff5472-e645-4cf7-8e88-5e8ba52cabc0" />
+<img width="1599" height="400" alt="image" src="https://github.com/user-attachments/assets/ef7994af-3374-46ef-8445-5638473ff36c" />
 
 ### 3. [Soal]
 
