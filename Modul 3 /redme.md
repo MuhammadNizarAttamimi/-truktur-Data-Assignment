@@ -128,12 +128,13 @@ int main() {
 
 ```
 #### Output:
-<img width="1602" height="669" alt="Image" src="https://github.com/user-attachments/assets/85c96198-a071-4296-8ba1-d02f2c1f798b" />
+<img width="1602" height="532" alt="Image" src="https://github.com/user-attachments/assets/632047c0-8310-4d15-a6f9-912066442e2b" />
 
-code ini digunakan untuk melakukan operasi pada dua buah matriks berukuran 3×3, yaitu:Penjumlahan matriks,Pengurangan matriks,Perkalian matriks, Program ini juga mengajarkan cara menggunakan array dua dimensi (2D array) serta loop bersarang (nested loop) untuk mengakses elemen-elemen dalam matriks.
+code ini digunakan untuk.
 
 #### Full code Screenshot:
-<img width="1652" height="984" alt="Image" src="https://github.com/user-attachments/assets/8ddd2308-44e6-4ced-995b-083dbb5f05b9" />
+<img width="1653" height="924" alt="image" src="https://github.com/user-attachments/assets/2636ef21-1bc6-4bbb-b92e-1a91edd9fad4" />
+
 
 ### 2. [Soal]
 
