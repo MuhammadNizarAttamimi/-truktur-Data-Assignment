@@ -157,8 +157,9 @@ void tampilkanMataKuliah(MataKuliah mk);
 
 #endif
 ```
-```
-**(Pelajaran.cpp)**
+
+**Pelajaran.cpp**
+```C++
 #include <iostream>
 #include "Pelajaran.h" 
 using namespace std;
@@ -174,8 +175,10 @@ void tampilkanMataKuliah(MataKuliah mk) {
     cout << "Nama Mata Kuliah : " << mk.nama << endl;
     cout << "Kode Mata Kuliah : " << mk.kode << endl;
 }
+```
 
-**(Main.cpp)**
+**Main.cpp**
+```C++
 #include <iostream>
 #include "Pelajaran.h"  
 using namespace std;
