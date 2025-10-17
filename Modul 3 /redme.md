@@ -208,77 +208,62 @@ code ini digunakan untuk.
 #include <iostream>
 using namespace std;
 
-int cariMin(int a[], int n);
-int cariMaks(int a[], int n);
-void hitungRata(int a[], int n);
-
 int main() {
-    int arr[10] = {11,8,5,7,12,26,3,54,33,55};
-    int pilih, n = 10;
+    int matriks1[3][3] = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
+    int matriks2[3][3] = { {9, 8, 7}, {6, 5, 4}, {3, 2, 1} };
 
-    do {
-        cout << "\n--- Menu Program Array ---\n";
-        cout << "1. Tampilkan isi array\n";
-        cout << "2. Cari nilai maksimum\n";
-        cout << "3. Cari nilai minimum\n";
-        cout << "4. Hitung nilai rata-rata\n";
-        cout << "5. Keluar\n";
-        cout << "Pilih: ";
-        cin >> pilih;
-
-        switch(pilih) {
-            case 1:
-                for(int i=0;i<n;i++)
-                    cout << arr[i] << " ";
-                cout << endl;
-                break;
-            case 2:
-                cout << "Nilai maksimum: " << cariMaks(arr,n) << endl;
-                break;
-            case 3:
-                cout << "Nilai minimum: " << cariMin(arr,n) << endl;
-                break;
-            case 4:
-                hitungRata(arr,n);
-                break;
-            case 5:
-                cout << "Terima kasih!\n";
-                break;
-            default:
-                cout << "Pilihan tidak valid!\n";
+    cout << "Isi Matriks 1 sebelum ditukar:\n";
+    for (int baris = 0; baris < 3; baris++) {
+        for (int kolom = 0; kolom < 3; kolom++) {
+            cout << matriks1[baris][kolom] << " ";
         }
-    } while(pilih != 5);
+        cout << endl;
+    }
+
+    cout << "\nIsi Matriks 2 sebelum ditukar:\n";
+    for (int baris = 0; baris < 3; baris++) {
+        for (int kolom = 0; kolom < 3; kolom++) {
+            cout << matriks2[baris][kolom] << " ";
+        }
+        cout << endl;
+    }
+
+    for (int baris = 0; baris < 3; baris++) {
+        for (int kolom = 0; kolom < 3; kolom++) {
+            int sementara = matriks1[baris][kolom];
+            matriks1[baris][kolom] = matriks2[baris][kolom];
+            matriks2[baris][kolom] = sementara;
+        }
+    }
+
+    cout << "\nSetelah pertukaran elemen matriks:\n";
+
+    cout << "Matriks 1:\n";
+    for (int baris = 0; baris < 3; baris++) {
+        for (int kolom = 0; kolom < 3; kolom++) {
+            cout << matriks1[baris][kolom] << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "\nMatriks 2:\n";
+    for (int baris = 0; baris < 3; baris++) {
+        for (int kolom = 0; kolom < 3; kolom++) {
+            cout << matriks2[baris][kolom] << " ";
+        }
+        cout << endl;
+    }
 
     return 0;
 }
-
-int cariMin(int a[], int n){
-    int min = a[0];
-    for(int i=1;i<n;i++)
-        if(a[i]<min) min = a[i];
-    return min;
-}
-
-int cariMaks(int a[], int n){
-    int maks = a[0];
-    for(int i=1;i<n;i++)
-        if(a[i]>maks) maks = a[i];
-    return maks;
-}
-
-void hitungRata(int a[], int n){
-    int total=0;
-    for(int i=0;i<n;i++) total += a[i];
-    cout << "Nilai rata-rata: " << (float)total/n << endl;
-}
 ```
 #### Output:
-<img width="1652" height="755" alt="Image" src="https://github.com/user-attachments/assets/c790110a-95c5-4be0-b1fd-c13d4a8caa74" />
+<img width="1601" height="441" alt="image" src="https://github.com/user-attachments/assets/99b41ff8-d8e8-470f-8c03-e45bdd6451c6" />
 
-Program ini digunakan untuk mengolah data array dengan berbagai fungsi, seperti: Menampilkan isi array,Mencari nilai maksimum,Mencari nilai minimum,Menghitung rata-rata nilai.
+Program ini digunakan untuk.
 
 #### Full code Screenshot:
-<img width="1700" height="999" alt="Image" src="https://github.com/user-attachments/assets/a99439a4-3dd3-4ebd-9d38-a039b3bd59e6" />
+<img width="1651" height="937" alt="image" src="https://github.com/user-attachments/assets/74a700c8-9e76-43fb-8169-61cbf3cfeda6" />
 
 ## Kesimpulan
 Ketiga program di atas merupakan contoh penerapan dasar pemrograman dalam bahasa C++, pada pengolahan data menggunakan variabel, array, dan matriks. Secara keseluruhan, ketiga program ini menggambarkan perkembangan logika pemrograman dari sederhana ke kompleks yang dimulai dari manipulasi variabel, pengolahan data linear dengan array, hingga pengolahan data dua dimensi dalam bentuk matriks — yang semuanya menjadi dasar penting dalam memahami konsep algoritma dan struktur data di C++. 
