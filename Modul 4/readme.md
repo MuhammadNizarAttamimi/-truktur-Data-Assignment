@@ -1,10 +1,8 @@
-# <h1 align="center">Laporan Praktikum Modul Abstract Data Type (ADT)</h1>
+# <h1 align="center">Laporan Praktikum Modul SINGLY LINKED LIST (BAGIAN PERTAМА)</h1>
 <p align="center">Muhammad Nizar Attamimi</p>
 
 ## Dasar Teori
-ADT adalah TYPE dan sekumpulan PRIMITIF (operasi dasar) terhadap TYPE tersebut. Selain itu, dalam
-sebuah ADT yang lengkap, disertakan pula definisi invarian dari TYPE dan aksioma yang berlaku. ADT
-merupakan definisi STATIK.
+Linked list (biasa disebut list saja) adalah salah satu bentuk struktur data (representasi penyimpanan) berupa serangkaian elemen data yang saling berkait (berhubungan) dan bersifat fleksibel karena dapat tumbuh dan mengerut sesuai kebutuhan. Data yang disimpan dalam Linked list bisa berupa data tunggal atau data majemuk. Data tunggal merupakan data yang hanya terdiri dari satu data (variabel), misalnya: nama bertipe string. Sedangkan data majemuk merupakan sekumpulan data (record) yang di dalamnya terdiri dari berbagai tipe data, misalnya: Data Mahasiswa, terdiri dari Nama bertipe string, NIM bertipe long integer, dan Alamat bertipe string.
 
 ## Guided 
 
