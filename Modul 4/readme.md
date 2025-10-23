@@ -3,71 +3,43 @@
 
 ## Dasar Teori
 Linked list (biasa disebut list saja) adalah salah satu bentuk struktur data (representasi penyimpanan) berupa serangkaian elemen data yang saling berkait (berhubungan) dan bersifat fleksibel karena dapat tumbuh dan mengerut sesuai kebutuhan. Data yang disimpan dalam Linked list bisa berupa data tunggal atau
-data majemuk. Data tunggal merupakan data yang hanya terdiri dari satu data (variabel),misalnya: nama bertipe string. Sedangkan data majemuk merupakan sek 
-umpulan data (record) yang di dalamnya terdiri dari berbagai tipe data, misalnya: Data Mahasiswa, terdiri dari Nama bertipe string, NIM bertipe longinteger
-, dan  Alamat bertipe string.
+data majemuk. Data tunggal merupakan data yang hanya terdiri dari satu data (variabel),misalnya: nama bertipe string. Sedangkan data majemuk merupakan 
+sekumpulan data (record) yang di dalamnya terdiri dari berbagai tipe data, misalnya: Data Mahasiswa, terdiri dari Nama bertipe string, NIM bertipe longinteger, dan Alamat bertipe string.
 
 ## Guided 
 
 ### 1. [SINGLY LINKED LIST (BAGIAN PERTAМА)]
 
 ```C++
-#include <iostream>
+list.h
+#include "list.h"
+
+#include<iostream>
 using namespace std;
 
-struct mahasiswa{ 
-char nim[10]; 
-int nilai1,nilai2;
-};
-void inputMhs(mahasiswa &m); 
-float rata2(mahasiswa m);
+int main(){
+    linkedlist List;
+    address nodeA, nodeB, nodeC, nodeD, nodeE = Nil;
+    createList(List);
 
-int main() 
-{ 
-mahasiswa mhs; 
-inputMhs(mhs); 
-cout << “rata-rata = “ << rata2(mhs); 
-return 0; 
-}
+    dataMahasiswa mhs;
 
+    nodeA = alokasi("Dhimas", "2311102151", 20);
+    nodeB = alokasi("Arvin", "2211110014", 21);
+    nodeC = alokasi("Rizal", "2311110029", 20);
+    nodeD = alokasi("Satrio", "2211102173", 21);
+    nodeE = alokasi("Joshua", "2311102133", 21);
 
-void inputMhs(mahasiswa &m){ 
-cout << “input nama = “; 
-cin >> m.nim; 
-cout << “input nilai = “; 
-cin >> m.nilai1; 
-cout << “input nilai2 = “;
-cin >> m.nilai2; 
-} 
-float rata2(mahasiswa m){ 
-return float(m.nilai1+m.nilai2)/2; 
-}
+    insertFirst(List, nodeA);
+    insertLast(List, nodeB);
+    insertAfter(List, nodeC, nodeA);
+    insertAfter(List, nodeD, nodeC);
+    insertLast(List, nodeE);
 
-mahasiswa.h
-#ifndef MAHASISWA_H_INCLUDED 
-#define MAHASISWA_H_INCLUDED 
-struct mahasiswa{ 
-char nim[10]; 
-int nilai1, nilai2; 
-};
-void inputMhs(mahasiswa &m); 
-float rata2(mahasiswa m); 
-#endif // MAHASISWA_H_INCLUDED
+    cout << "--- ISI LIST SETELAH DILAKUKAN INSERT ---" << endl;
+    printList(List);
 
-mahasiswa.cpp
-#include “mahasiswa.h” 
-void inputMhs(mahasiswa &m){ 
-cout << “input nama = “; 
-cin >> (m).nim; 
-cout << “input nilai = “; 
-cin >> (m).nilai1; 
-cout << “input nilai2 = “; 
-cin >> (m).nilai2;
-} 
- 
-float rata2(mahasiswa m){ 
-  return float(m.nilai1+m.nilai2)/2; 
-}
+    return 0;
 }
 ```
 Program ini bertujuan untuk memasukkan data mahasiswa dan menghitung rata-rata dua nilai yang diinput.
