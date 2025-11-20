@@ -265,9 +265,8 @@ Program ini bertujuan untuk membangun sistem linked list mahasiswa yang dapat me
 
 ### 1. [Soal]
 
-```C++
 **[Singlylist1.h]**
-
+```C++
 #ifndef SINGLYLIST_H_INCLUDED
 #define SINGLYLIST_H_INCLUDED
 
