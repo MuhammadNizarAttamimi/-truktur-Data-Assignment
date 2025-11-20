@@ -293,9 +293,71 @@ void insertFirst(List &L, address P);
 void printInfo(List L);
 
 #endif
+```
 
 **[Singlylist1.cpp]**
+```C++
+#include "Singlylist1.h"
 
+void createList(List &L) {
+    L.first = Nil;
+}
+
+address alokasi(infotype x) {
+    address P = new elmList;
+    P->info = x;
+    P->next = Nil;
+    return P;
+}
+
+void dealokasi(address &P) {
+    delete P;
+    P = Nil;
+}
+
+void insertFirst(List &L, address P) {
+    P->next = L.first;
+    L.first = P;
+}
+
+void printInfo(List L) {
+    address P = L.first;
+    while (P != Nil) {
+        cout << P->info << " ";
+        P = P->next;
+    }
+    cout << endl;
+}
+```
+
+**[Main1.cpp]**
+```C++
+#include "Singlylist1.h"
+
+int main() {
+    List L;
+    address P1, P2, P3, P4, P5= Nil;
+    createList(L);
+
+    P1 = alokasi(2);
+    insertFirst(L, P1);
+
+    P2 = alokasi(0);
+    insertFirst(L, P2);
+
+    P3 = alokasi(8);
+    insertFirst(L, P3);
+
+    P4 = alokasi(12);
+    insertFirst(L, P4);
+
+    P5 = alokasi(9);
+    insertFirst(L, P5);
+
+    printInfo(L);
+
+    return 0;
+}
 ```
 #### Output:
 <img width="1458" height="137" alt="image" src="https://github.com/user-attachments/assets/8a66ab23-d3dd-4e95-a1d1-526370cafe3a" />
@@ -303,8 +365,9 @@ void printInfo(List L);
 code ini digunakan untuk.
 
 #### Full code Screenshot:
-<img width="1653" height="924" alt="image" src="https://github.com/user-attachments/assets/2636ef21-1bc6-4bbb-b92e-1a91edd9fad4" />
-
+<img width="1599" height="549" alt="image" src="https://github.com/user-attachments/assets/130493e8-88aa-4910-9564-c7f0c9c7e0bf" />
+<img width="1598" height="648" alt="image" src="https://github.com/user-attachments/assets/fcdc7adc-ba37-4fd0-8857-62762a737dd3" />
+<img width="1596" height="552" alt="image" src="https://github.com/user-attachments/assets/0ef7ef0f-c98e-4d8b-a987-548b0238be88" />
 
 ### 2. [Soal]
 **(Pelajaran.h)**
