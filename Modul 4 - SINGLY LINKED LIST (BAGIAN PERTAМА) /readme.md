@@ -260,7 +260,7 @@ int main(){
     return 0;
 }
 ```
-Program ini bertujuan untuk membangun sistem linked list mahasiswa yang dapat menyimpan, menambah, menghapus, dan menampilkan data secara dinamis.
+Program ini bertujuan untuk mengelola data mahasiswa meggunakansistem linked list, mahasiswa yang dapat menyimpan, menambah, menghapus, dan menampilkan data secara dinamis yang fleksibel dengan konsep linked list.
 ## Unguided 
 
 ### 1. [Soal]
@@ -362,8 +362,7 @@ int main() {
 #### Output:
 <img width="1458" height="137" alt="image" src="https://github.com/user-attachments/assets/8a66ab23-d3dd-4e95-a1d1-526370cafe3a" />
 
-code ini digunakan untuk.
-
+code ini digunakan untuk membuat dan menampilkan singly linked list di. Setiap node punya data dan petunjuk ke node berikutnya, dan List menyimpan node pertama. Fungsi createList membuat list kosong, alokasi membuat node baru, insertFirst menambah node di depan list, dan printInfo menampilkan isi list. Di fungsi main, beberapa nilai dimasukkan ke list, lalu seluruh isi list dicetak.
 #### Full code Screenshot:
 <img width="1599" height="549" alt="image" src="https://github.com/user-attachments/assets/130493e8-88aa-4910-9564-c7f0c9c7e0bf" />
 <img width="1598" height="648" alt="image" src="https://github.com/user-attachments/assets/fcdc7adc-ba37-4fd0-8857-62762a737dd3" />
@@ -531,7 +530,7 @@ int main() {
 #### Output:
 <img width="1454" height="153" alt="image" src="https://github.com/user-attachments/assets/21846815-067f-4356-9849-7ab2347abeb4" />
 
-code ini digunakan untuk.
+code ini digunakan untuk membuat, menampilkan, dan menghapus elemen pada singly linked list.  Program menyediakan fungsi untuk membuat list, menambah dan menghapus node, menghitung jumlah elemen, serta menghapus seluruh list. Pada fungsi main, beberapa node ditambahkan lalu dihapus sebagian, kemudian ditampilkan hasil akhir beserta jumlah node sebelum dan sesudah list dihapus. 
 
 #### Full code Screenshot:
 <img width="1595" height="681" alt="image" src="https://github.com/user-attachments/assets/fade9ec3-87ea-492b-9e58-3abdd0634bba" />
@@ -539,8 +538,12 @@ code ini digunakan untuk.
 <img width="1599" height="715" alt="image" src="https://github.com/user-attachments/assets/001b5a80-15d8-4584-8aff-2e70c0e30e2c" />
 
 ## Kesimpulan
-program menerapkan konsep dasar pemrograman terstruktur C++.
+program menerapkan konsep dasar pemrograman terstruktur C++. Kedua program di atas menerapkan konsep struktur data dinamis menggunakan singly linked list. Program pertama menekankan pada pembuatan dan penambahan elemen ke dalam list, sedangkan program kedua menambahkan fitur penghapusan elemen serta perhitungan jumlah. Dari kedua program tersebut dapat disimpulkan bahwa linked list memungkinkan pengelolaan data yang lebih fleksibel dibanding array.
 ## Referensi
+[1]. GeeksforGeeks. (n.d.). Singly Linked List. Retrieved from https://www.geeksforgeeks.org
+[2]. https://chatgpt.com
+[3]. file:///C:/Users/hp/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/FB8C6BF54308E84227E5A00CD9CDDCE2F492A52B/transfers/2025-47/Soal%20Latihan%20Modul%204%20Praktikum%20Struktur%20Data%20(1).pdf
+
 
 
 
