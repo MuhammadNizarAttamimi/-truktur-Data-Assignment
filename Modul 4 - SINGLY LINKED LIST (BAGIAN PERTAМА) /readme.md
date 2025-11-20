@@ -12,35 +12,44 @@ sekumpulan data (record) yang di dalamnya terdiri dari berbagai tipe data, misal
 
 ```C++
 list.h
-#include "list.h"
+#ifndef LIST_H
+#define LIST_H
+#define Nil NULL
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-    linkedlist List;
-    address nodeA, nodeB, nodeC, nodeD, nodeE = Nil;
-    createList(List);
+//deklarasi isi data struct mahasiswa
+struct mahasiswa{
+    string nama;
+    string nim;
+    int umur;
+};
 
-    dataMahasiswa mhs;
+typedef mahasiswa dataMahasiswa; //Membiarkan nama alias dataMahasiswa untuk struct mahasiswa
 
-    nodeA = alokasi("Dhimas", "2311102151", 20);
-    nodeB = alokasi("Arvin", "2211110014", 21);
-    nodeC = alokasi("Rizal", "2311110029", 20);
-    nodeD = alokasi("Satrio", "2211102173", 21);
-    nodeE = alokasi("Joshua", "2311102133", 21);
+typedef struct node *address; //Mendefinisikan alias address sbg pointer ke struct node
 
-    insertFirst(List, nodeA);
-    insertLast(List, nodeB);
-    insertAfter(List, nodeC, nodeA);
-    insertAfter(List, nodeD, nodeC);
-    insertLast(List, nodeE);
+struct node{
+    dataMahasiswa isidata;
+    address next;
+};
 
-    cout << "--- ISI LIST SETELAH DILAKUKAN INSERT ---" << endl;
-    printList(List);
+struct linkedlist{ //ini linked list nya
+    address first;
+};
 
-    return 0;
-}
+//semua function & prosedur yang akan dipakai
+bool isEmpty(linkedlist List);
+void createList(linkedlist &List);
+address alokasi(string nama, string nim, int umur);
+void dealokasi(address &node);
+void printList(linkedlist List);
+void insertFirst(linkedlist &List, address nodeBaru);
+void insertAfter(linkedlist &List, address nodeBaru, address Prev);
+void insertLast(linkedlist &List, address nodeBaru);
+
+#endif
 ```
 
 ```C++
@@ -257,11 +266,40 @@ Program ini bertujuan untuk membangun sistem linked list mahasiswa yang dapat me
 ### 1. [Soal]
 
 ```C++
+**[Singlylist1.h]**
+
+#ifndef SINGLYLIST_H_INCLUDED
+#define SINGLYLIST_H_INCLUDED
+
 #include <iostream>
+using namespace std;
+
+#define Nil NULL
+typedef int infotype;
+typedef struct elmList *address;
+
+struct elmList {
+    infotype info;
+    address next;
+};
+
+struct List {
+    address first;
+};
+
+void createList(List &L);
+address alokasi(infotype x);
+void dealokasi(address &P);
+void insertFirst(List &L, address P);
+void printInfo(List L);
+
+#endif
+
+**[Singlylist1.cpp]**
 
 ```
 #### Output:
-<img width="1602" height="532" alt="Image" src="https://github.com/user-attachments/assets/632047c0-8310-4d15-a6f9-912066442e2b" />
+<img width="1458" height="137" alt="image" src="https://github.com/user-attachments/assets/8a66ab23-d3dd-4e95-a1d1-526370cafe3a" />
 
 code ini digunakan untuk.
 
