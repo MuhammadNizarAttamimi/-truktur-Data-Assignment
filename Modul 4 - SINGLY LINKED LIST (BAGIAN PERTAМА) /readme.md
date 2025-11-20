@@ -370,73 +370,173 @@ code ini digunakan untuk.
 <img width="1596" height="552" alt="image" src="https://github.com/user-attachments/assets/0ef7ef0f-c98e-4d8b-a987-548b0238be88" />
 
 ### 2. [Soal]
-**(Pelajaran.h)**
+**(Singlylist2.h)**
 ```C++
-#ifndef MATAKULIAH_H
-#define MATAKULIAH_H
+#ifndef SINGLYLIST_H_INCLUDED
+#define SINGLYLIST_H_INCLUDED
 
-#include <string>
+#include <iostream>
 using namespace std;
 
-struct MataKuliah {
-    string nama;
-    string kode;
+#define Nil NULL
+typedef int infotype;
+typedef struct elmList *address;
+
+struct elmList {
+    infotype info;
+    address next;
 };
 
-MataKuliah buatMataKuliah(string namaMatkul, string kodeMatkul);
+struct List {
+    address first;
+};
 
-void tampilkanMataKuliah(MataKuliah mk);
+void createList(List &L);
+address alokasi(infotype x);
+void dealokasi(address &P);
+void insertFirst(List &L, address P);
+void printInfo(List L);
+
+void deleteFirst(List &L, address &P);
+void deleteLast(List &L, address &P);
+void deleteAfter(List &L, address Prec, address &P);
+int nbElmt(List L);
+void deleteList(List &L);
 
 #endif
 ```
 
-**(Pelajaran.cpp)**
+**(Singlylist2.cpp)**
 ```C++
-#include <iostream>
-#include "Pelajaran.h" 
-using namespace std;
+#include "Singlylist2.h"
 
-MataKuliah buatMataKuliah(string namaMatkul, string kodeMatkul) {
-    MataKuliah mk;
-    mk.nama = namaMatkul;
-    mk.kode = kodeMatkul;
-    return mk;
+void createList(List &L) {
+    L.first = Nil;
 }
 
-void tampilkanMataKuliah(MataKuliah mk) {
-    cout << "Nama Mata Kuliah : " << mk.nama << endl;
-    cout << "Kode Mata Kuliah : " << mk.kode << endl;
+address alokasi(infotype x) {
+    address P = new elmList;
+    P->info = x;
+    P->next = Nil;
+    return P;
+}
+
+void dealokasi(address &P) {
+    delete P;
+    P = Nil;
+}
+
+void insertFirst(List &L, address P) {
+    P->next = L.first;
+    L.first = P;
+}
+
+void printInfo(List L) {
+    address P = L.first;
+    while (P != Nil) {
+        cout << P->info << " ";
+        P = P->next;
+    }
+    cout << endl;
+}
+
+void deleteFirst(List &L, address &P) {
+    if (L.first != Nil) {
+        P = L.first;
+        L.first = P->next;
+        P->next = Nil;
+    }
+}
+
+void deleteLast(List &L, address &P) {
+    address Q = L.first;
+    if (Q == Nil) {
+        P = Nil;
+    } else if (Q->next == Nil) {
+        P = Q;
+        L.first = Nil;
+    } else {
+        while (Q->next->next != Nil) {
+            Q = Q->next;
+        }
+        P = Q->next;
+        Q->next = Nil;
+    }
+}
+
+void deleteAfter(List &L, address Prec, address &P) {
+    if (Prec != Nil && Prec->next != Nil) {
+        P = Prec->next;
+        Prec->next = P->next;
+        P->next = Nil;
+    }
+}
+
+int nbElmt(List L) {
+    int count = 0;
+    address P = L.first;
+    while (P != Nil) {
+        count++;
+        P = P->next;
+    }
+    return count;
+}
+
+void deleteList(List &L) {
+    address P;
+    while (L.first != Nil) {
+        deleteFirst(L, P);
+        dealokasi(P);
+    }
 }
 ```
 
-**(Main.cpp)**
+**(Main2.cpp)**
 ```C++
-#include <iostream>
-#include "Pelajaran.h"  
-using namespace std;
+#include "Singlylist2.h"
 
 int main() {
-    string namaMatkul = "Praktikum Struktur Data";
-    string kodeMatkul = "STD";
+    List L;
+    address P, Q;
 
-    MataKuliah mk = buatMataKuliah(namaMatkul, kodeMatkul);
+    createList(L);
 
-    cout << "\n=== Informasi Mata Kuliah ===\n";
-    tampilkanMataKuliah(mk);
+    insertFirst(L, alokasi(2));
+    insertFirst(L, alokasi(0));
+    insertFirst(L, alokasi(8));
+    insertFirst(L, alokasi(12));
+    insertFirst(L, alokasi(9));
+    
+    deleteFirst(L, P);
+    dealokasi(P);
+
+    deleteLast(L, P);
+    dealokasi(P);
+
+    Q = L.first;
+    deleteAfter(L, Q, P);
+    dealokasi(P);
+
+    printInfo(L);
+
+    cout << "Jumlah node: " << nbElmt(L) << endl;
+
+    deleteList(L);
+    cout << "- List Berhasil Terhapus -" << endl;
+    cout << "Jumlah node: " << nbElmt(L) << endl;
 
     return 0;
 }
-
 ```
 #### Output:
-<img width="1604" height="172" alt="image" src="https://github.com/user-attachments/assets/18d76be1-aab3-4176-97f6-14b71bc31da2" />
+<img width="1454" height="153" alt="image" src="https://github.com/user-attachments/assets/21846815-067f-4356-9849-7ab2347abeb4" />
 
 code ini digunakan untuk.
 
 #### Full code Screenshot:
-<img width="1600" height="421" alt="image" src="https://github.com/user-attachments/assets/4cbf13bb-579c-4d9f-a0ec-83c2525bab14" />
-<img width="1603" height="401" alt="image" src="https://github.com/user-attachments/assets/59ff5472-e645-4cf7-8e88-5e8ba52cabc0" />
-<img width="1599" height="400" alt="image" src="https://github.com/user-attachments/assets/ef7994af-3374-46ef-8445-5638473ff36c" />
+<img width="1595" height="681" alt="image" src="https://github.com/user-attachments/assets/fade9ec3-87ea-492b-9e58-3abdd0634bba" />
+<img width="1736" height="948" alt="image" src="https://github.com/user-attachments/assets/4df8082e-6e9e-4ab5-9c73-ac71cb382fca" />
+<img width="1599" height="715" alt="image" src="https://github.com/user-attachments/assets/001b5a80-15d8-4584-8aff-2e70c0e30e2c" />
 
 ## Kesimpulan
 program menerapkan konsep dasar pemrograman terstruktur C++.
