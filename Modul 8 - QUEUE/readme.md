@@ -444,7 +444,7 @@ int main() {
 #### Output:
 <img width="1459" height="334" alt="Image" src="https://github.com/user-attachments/assets/6c21af38-2dd5-4162-99dd-5d577cf2c254" />
 
-Program ini bikin stack, terus otomatis ngisi pakai angka 4729601. Habis itu, isi stack ditampilin dari atas ke bawah. Lalu stack-nya dibalik pakai stack sementara, dan hasil akhirnya ditampilin lagi.
+Program ini menunjukkan cara kerja struktur data Queue berbasis array statis dengan prinsip FIFO. Melalui fungsi enqueue dan dequeue, dapat dilihat bagaimana data ditambahkan di bagian belakang antrian dan dihapus dari bagian depan.
 
 #### Full code Screenshot:
 <img width="1582" height="488" alt="Image" src="https://github.com/user-attachments/assets/879f6cab-bb64-4647-b222-01c585aa2cc6" />
@@ -454,7 +454,7 @@ Program ini bikin stack, terus otomatis ngisi pakai angka 4729601. Habis itu, is
 <img width="1601" height="572" alt="Image" src="https://github.com/user-attachments/assets/872f0da3-a3f2-4bb9-aea1-66a3bbdf250f" />
 
 ## Kesimpulan
-Stack itu kerjanya pakai prinsip LIFO, jadi data yang masuk terakhir bakal keluar duluan. Di sini aku nyoba operasi dasar kayak push sama pop, terus bikin fungsi buat nampilin isi stack dan ngebalik urutannya. Dari hasil percobaan, stack-nya jalan sesuai logika dan proses balik datanya berhasil. Praktikum ini bikin aku jadi lebih paham cara pakai stack di program.
+Kode di atas dibuat untuk menunjukkan cara kerja antrian queue dalam pemrograman. Data yang masuk lebih dulu akan diproses dan dikeluarkan lebih dulu. Program ini memperlihatkan bagaimana data dimasukkan ke antrian, dikeluarkan satu per satu, dan ditampilkan setiap kali terjadi perubahan. Dengan kode ini memudahkan kita untuk memahami konsep dasar queue dan bagaimana antrian dikelola menggunakan array dalam bahasa C++.
 
 ## Referensi
 [1] GeeksforGeeks. (n.d.). Stack in C++. Retrieved from https://www.geeksforgeeks.org
