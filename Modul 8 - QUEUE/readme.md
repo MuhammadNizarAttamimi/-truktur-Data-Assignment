@@ -3,8 +3,7 @@
 
 ## Dasar Teori
 
-Queue merupakan struktur data yang dapat diumpamakan seperti sebuah antrean. Misalkan antrean pada loket pembelian tiket Kereta Api. Orang yang akan mendapatkan pelayanan yang pertama adalah orang pertamakali masuk dalam antrean tersebut dan yang terakhir masuk dia akan mendapatkan layanan yang terakhir pula. Jadi prinsip dasar dalam Queue adalah FIFO (First in Fisrt out), proses yang pertama masuk akan diakses terlebih dahulu. Dalam pengimplementasian
-struktur Queue dalam C dapat menggunakan tipe data array dan linked list.
+Queue merupakan struktur data yang dapat diumpamakan seperti sebuah antrean. Misalkan antrean pada loket pembelian tiket Kereta Api. Orang yang akan mendapatkan pelayanan yang pertama adalah orang pertamakali masuk dalam antrean tersebut dan yang terakhir masuk dia akan mendapatkan layanan yang terakhir pula. Jadi prinsip dasar dalam Queue adalah FIFO (First in Fisrt out), proses yang pertama masuk akan diakses terlebih dahulu. Dalam pengimplementasian struktur Queue dalam C dapat menggunakan tipe data array dan linked list.
 ## Guided 
 
 ### 1. [STACK]
@@ -309,7 +308,7 @@ int main(){
     return 0;
 }
 ```
-Program ini pakai struktur data stack yang dibuat dengan array. Di dalamnya ada operasi dasar push (nambah data), pop (nghapus data paling atas), plus fitur tambahan kayak update dan cari data (search).
+Program ini untuk memperlihatkan perbedaan cara kerja queue menggunakan linked list dan array circular. Dengan menunjukin cara kerja antrian (queue), yaitu data yang masuk pertama bakal keluar duluan, dengan contoh nama-nama yang dimasukin, dikeluarin, terus ditampilin lagi isi antriannya.
 
 ## Unguided 
 
@@ -457,8 +456,9 @@ Program ini menunjukkan cara kerja struktur data Queue berbasis array statis den
 Kode di atas dibuat untuk menunjukkan cara kerja antrian queue dalam pemrograman. Data yang masuk lebih dulu akan diproses dan dikeluarkan lebih dulu. Program ini memperlihatkan bagaimana data dimasukkan ke antrian, dikeluarkan satu per satu, dan ditampilkan setiap kali terjadi perubahan. Dengan kode ini memudahkan kita untuk memahami konsep dasar queue dan bagaimana antrian dikelola menggunakan array dalam bahasa C++.
 
 ## Referensi
-[1] GeeksforGeeks. (n.d.). Stack in C++. Retrieved from https://www.geeksforgeeks.org
-[2] file:///C:/Users/hp/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/FB8C6BF54308E84227E5A00CD9CDDCE2F492A52B/transfers/2025-47/Modul%207%20Stack%20(1).pdf
+[1] GeeksforGeeks. (n.d.). Queue data structure. https://www.geeksforgeeks.org/queue-data-structure/
+[2] Dicoding Team. (2024, 15 Maret). Mengenal Struktur Data Queue: Konsep FIFO dan Implementasinya. Dicoding. https://www.dicoding.com/blog/struktur-data-queue/ 
+[3] AI
 
 
 
