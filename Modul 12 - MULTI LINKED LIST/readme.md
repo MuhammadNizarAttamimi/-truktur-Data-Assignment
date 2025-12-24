@@ -158,12 +158,11 @@ Program ini digunakan untuk menunjukkan cara menambahkan data mahasiswa ke dalam
 
 
 ## Kesimpulan
-Program ini menunjukkan sebuah implementasi Single Linked List sederhana untuk menyimpan dan mengelola data mahasiswa. Program ini mendukung operasi dasar seperti inisialisasi list, alokasi node, penyisipan di berbagai posisi, dan penampilan data, sehingga sangat cocok digunakan sebagai latihan praktikum struktur data.
-
+Program di atas merupakan implementasi struktur data Single Linked List dalam bahasa pemrograman C++ yang digunakan untuk mengelola data mahasiswa. Setiap data mahasiswa disimpan dalam sebuah node yang saling terhubung menggunakan pointer.
 ## Referensi
-[1] 
-[2] 
-[3] 
+[1] GeeksforGeeks.(2025). Linked List in C++. Diakses dari https://www.geeksforgeeks.org/cpp/cpp-linked-list/
+[2] GeeksforGeeks. (2025). Program to Implement Singly Linked List in C++ Using Class. Diakses dari https://www.geeksforgeeks.org/cpp/program-to-implement-singly-linked-list-in-c-using-class/
+[3] file:///C:/Users/hp/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/FB8C6BF54308E84227E5A00CD9CDDCE2F492A52B/transfers/2025-51/multilinkedlist.pdf
 [4] AI
 
 
